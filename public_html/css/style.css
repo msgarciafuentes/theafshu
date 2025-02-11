@@ -416,6 +416,10 @@ h6, .h6 {
   font-size: 1rem;
 }
 
+h7, .h7 {
+  font-size: 0.7rem;
+}
+
 .lead {
   font-size: 1.25rem;
   font-weight: 300;
@@ -9486,6 +9490,11 @@ h6,
   font-weight: 400 !important;
 }
 
+h7,
+.font-weight-normal {
+  font-weight: 300 !important;
+}
+
 .back-to-top {
   position: fixed;
   display: none;
@@ -9878,3 +9887,78 @@ td {
   transform: scale(1.1);
 }
 
+/* Document Page Styling */
+.documents-container {
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+/* Document Boxes */
+.document-box {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  height: 100%;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.document-box h3 {
+  font-weight: 700;
+  color: #33489e;
+  margin-bottom: 15px;
+}
+
+/* Add Border Between Columns */
+.documents-container .row > div {
+  border-right: 1px solid #ddd;
+}
+
+.documents-container .row > div:last-child {
+  border-right: none;
+}
+
+/* Document List */
+.document-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.document-list li {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+/* PDF Link Styling */
+.document-list li i {
+  font-size: 20px;
+  color: #007bff;
+  margin-right: 8px;
+}
+
+.document-list li a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease-in-out;
+}
+
+.document-list li a:hover {
+  color: #007bff;
+}
+
+/* Responsive Layout */
+@media (max-width: 992px) {
+  .documents-container .row > div {
+      border-right: none;
+      margin-bottom: 20px;
+  }
+
+  .document-box {
+      text-align: center;
+  }
+}
